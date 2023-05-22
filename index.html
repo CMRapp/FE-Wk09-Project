@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Beer Buddy Florida | Home</title>
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.css">
+    </head>
+
+    <body class="bg-dark">
+        <!-- Website Header -->
+        <header>
+            <!-- use for top admin bar / widgets -->
+        </header>
+        
+        <!-- Navigation Bar -->
+        
+        <div class="container-fluid">
+            <nav class="navbar sticky-top navbar-expand-lg navbar-dark bg-dark nav-pills">
+                <div class="container">
+                    <a class="navbar-brand" href="index.html">
+                        <img src="../images/bb-fl-logo.png" alt="Beer Buddy FL Logo">
+                    </a>
+                
+                    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavDropdown" aria-controls="navbarNavDropdown" aria-expanded="false" aria-label="Toggle navigation">
+                        <span class="navbar-toggler-icon"></span>
+                    </button>
+
+                    <div class="collapse navbar-collapse" id="navbarNavDropdown">
+                        <ul class="navbar-nav navbar-nav me-auto mb-2 mb-sm-0">
+                            <li class="nav-item">
+                                <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Breweries</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link disabled" href="#">Beers</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link" href="beer-styles.html">Styles</a>
+                            </li>            
+                            <li class="nav-item">
+                                <a class="nav-link" href="contact.html">Contact</a>
+                            </li>
+                        </ul>
+                        <form class="d-flex" role="search">
+                            <input class="form-control me-2" type="search" placeholder="Search is inactive" aria-label="Search">
+                            <button class="btn btn-outline-success" type="submit">Search</button>
+                        </form>
+                    </div>
+                </div>
+            </nav>
+
+            <!-- Breadcrumbs for future use
+            <div class="container-fluid bg-dark">
+              <div class="container">
+              <nav aria-label="breadcrumb">
+                  <ol class="breadcrumb">
+                    <li class="breadcrumb-item active" aria-current="page"><a href="index.html" class="text-decoration-none"></a>Home</li>
+                      <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Breweries</a></li>
+                      <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Beers</a></li>
+                      <li class="breadcrumb-item"><a href="beer-styles.html" class="text-decoration-none">Styles</a></li>
+                      <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Submit</a></li>
+                      <li class="breadcrumb-item"><a href="#" class="text-decoration-none">Contact</a></li>
+                  </ol>
+              </nav>
+              </div>
+          </div>
+          -->
+        
+
+        <!-- MAIN CONTENT -->
+        <main class="container-fluid bg-light text-dark py-1">
+            <div class="container">
+                <!-- full width hero image goes here -->
+                <img src="../images/craft-beers.png" class="img-fluid border border-danger border-1 rounded" alt="craft beer image">
+            </div>
+
+            <div class="container py-4">
+                <div class="row">
+                    <!-- left column -->
+                    <div class="col-md-6">
+                        <h1><em>Welcome Florida Beer Lovers!</em></h1>
+                        <h5><em>If you love craft beers and you love Florida - you're in the right place!</em></h5>
+                        <p>
+                            Beer Buddy Florida initially started as a project while learning back end software development during <a href="https://promineotech.com/" target="_blank">Promineo Tech</a>'s Back End Software Developer Bootcamp.
+                            It is now on its way to becoming a <strong>FULL STACK</strong> development project as I am currently enrolled in the Front End Software Developer Bootcamp.
+                        </p>
+
+                        <p>
+                            The purpose of this website is to provide information of Florida Craft Breweries and their beers. Information that you'll find (eventtually!) will include:
+                            <ul>
+                                <li>Brewery information, such as Date Established, Location, and Contact Information.</li>
+                                <li>A list of brewer's beers including Pictures, Brewer's Notes, ABV & IBU. </li>
+                                <li>Taster's Reviews (future)</li>
+                                <li>Information on the Styles (Categories) of beer.</li>
+                            </ul>
+                        </p>
+
+                        <h3 class="py-3"><em>Pop a top of your favorite brew and dive on in!</em></h3>
+
+                        <img src="../images/beer-on-beach.png" class="img-fluid border border-danger border-1 rounded" alt="beer on beach">
+
+                        <div class="alert alert-warning my-5 border border-danger border-1" role="alert">
+                            NOTE: This website has been created solely using HTML and Bootstrap. No extra CSS, SASS or Javascript has been used to create the look you see.
+                          </div>
+                    </div>
+
+                    <!-- right column -->
+                    <div class="col-md-6">
+                        <p>The number of craft breweries have been rapidly growing in the United States over the last decade. According to the Brewers Association, in 2022 the number
+                            of microbreweries, brewpubs, taproom breweries and regional craft breweries reached an all-time high of <strong>9,552!</strong> <cite class="float-end">Source: 
+                                <a href="https://www.brewersassociation.org/press-releases/brewers-association-releases-annual-craft-brewing-industry-production-report-and-top-50-producing-craft-brewing-companies-for-2022/"
+                                 target="_blank">Brewers Association</a></cite>                   
+                        </p>
+
+                        <p>Florida only had 3 Craft breweries in 1989. The surge of Florida Craft Breweries began in the early 90s and has
+                            been growing every day since. As of 2022, there were almost 400 operational microbreweries in Florida. Here are the number of breweries by county.</p>
+                           
+                        <h3 class="py-3">Florida Breweries by County</h3>
+                         <div class="row">
+                            <!-- nested left table -->
+                            <div class="col-md-6">
+                                <table class="table table-warning table-hover border border-1 ">
+                                    <tr>
+                                        <th>County</th>
+                                        <th class="border border-1 border-start-0">Breweries</th>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Alachua</td>
+                                        <td class="border border-1 border-start-0">3</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Bay</td>
+                                        <td class="border border-1 border-start-0">1</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Brevard</td>
+                                        <td class="border border-1 border-start-0">7</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Broward</td>
+                                        <td class="border border-1 border-start-0">7</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Charlotte</td>
+                                        <td class="border border-1 border-start-0">1</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Citrus</td>
+                                        <td class="border border-1 border-start-0">1</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Clay</td>
+                                        <td class="border border-1 border-start-0">1</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Collier</td>
+                                        <td class="border border-1 border-start-0">3</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Duval</td>
+                                        <td class="border border-1 border-start-0">15</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Escambia</td>
+                                        <td class="border border-1 border-start-0">3</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Hillsborough</td>
+                                        <td class="border border-1 border-start-0">13</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Indian River</td>
+                                        <td class="border border-1 border-start-0">4</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Lake</td>
+                                        <td class="border border-1 border-start-0">2</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Lee</td>
+                                        <td class="border border-1 border-start-0">4</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Leon</td>
+                                        <td class="border border-1 border-start-0">7</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Manatee</td>
+                                        <td class="border border-1 border-start-0">2</td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <td>Marion</td>
+                                        <td class="border border-1 border-start-0">1</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            
+                            <!-- nested right table -->
+                            <div class="col-md-6">
+                                <table class="table table-warning table-hover border border-1 ">
+                                    <tr>
+                                        <th>County</th>
+                                        <th class="border border-1 border-start-0">Breweries</th>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Miami-Dade</td>
+                                        <td class="border border-1 border-start-0">8</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Monroe</td>
+                                        <td class="border border-1 border-start-0">5</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Nassau</td>
+                                        <td class="border border-1 border-start-0">1</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Okaloosa</td>
+                                        <td class="border border-1 border-start-0">2</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Orange</td>
+                                        <td class="border border-1 border-start-0">9</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Osecola</td>
+                                        <td class="border border-1 border-start-0">1</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Palm Beach</td>
+                                        <td class="border border-1 border-start-0">9</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Pasco</td>
+                                        <td class="border border-1 border-start-0">3</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Pinellas</td>
+                                        <td class="border border-1 border-start-0">19</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Polk</td>
+                                        <td class="border border-1 border-start-0">2</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Santa Rosa</td>
+                                        <td class="border border-1 border-start-0">1</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Sarasota</td>
+                                        <td class="border border-1 border-start-0">4</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>Seminole</td>
+                                        <td class="border border-1 border-start-0">1</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>St Johns</td>
+                                        <td class="border border-1 border-start-0">2</td>
+                                    </tr>
+        
+                                    <tr class="table-light">
+                                        <td>St Lucie</td>
+                                        <td class="border border-1 border-start-0">1</td>
+                                    </tr>
+        
+                                    <tr>
+                                        <td>Volusia</td>
+                                        <td class="border border-1 border-start-0">5</td>
+                                    </tr>
+                                    <tr class="table-light">
+                                        <td>Walton</td>
+                                        <td class="border border-1 border-start-0">1</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <cite>Source: <a href="https://en.wikipedia.org/wiki/List_of_breweries_in_Florida" target="_blank">Wikipedia</a></cite>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </main>
+        <!-- FOOTER -->
+        <footer class="container-fluid bg-dark text-light py-2 h-100 d-inline-block">
+          <div class="container">
+            <p>&copy 2023 Christian M Rapp | <a href="https://www.cmrwebstudio.com" target="_blank" class="text-decoration-none">CMR Web Studio</a>
+            <img class="float-end"  height=45px src="images\cmr_sig5.png"></p>
+          </div>
+        </footer>
+
+        
+        <!-- SCRIPTS -->
+        <script src="node_modules/jquery/dist/jquery.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.bundle.js"></script>
+    </body>
+</html>
